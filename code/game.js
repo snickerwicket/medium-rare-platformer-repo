@@ -14,7 +14,7 @@ function Level(plan) {
 
     // Loop through each array element in the inner array for the type of the tile
     for (var x = 0; x < this.width; x++) {
-      // Get the type from that character in the string. It can be 'x', '!' or ' '
+      // Get the type from that character in the string. It can be 'x', '!', 'y', or ' '
       // If the character is ' ', assign null.
 
       var ch = line[x], fieldType = null;
@@ -25,6 +25,8 @@ function Level(plan) {
       // Because there is a third case (space ' '), use an "else if" instead of "else"
       else if (ch == "!")
         fieldType = "lava";
+	  else if (ch == "y")
+		fieldType = "floater";
 
       // "Push" the fieldType, which is a string, onto the gridLine array (at the end).
       gridLine.push(fieldType);
