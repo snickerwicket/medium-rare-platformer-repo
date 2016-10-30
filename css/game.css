@@ -5,6 +5,16 @@
 .lava          { background: rgb(9, 1, 165); }
 .wall          { background: rgb(108, 193, 87);   }
 .floater    { background: orange;	}
+.actor{position: absolute}
+.player {background: white; }
+.coin{background:rgb(241, 10, 89); }
+.bomb{background:black;}
+.lost .player{
+	background: rgb(160,64,64);
+}
+.won .player{
+	box-shadow:-4px -7px 8px white, 4px -7px 8px white;
+}
 
 .game {
   overflow: hidden;
